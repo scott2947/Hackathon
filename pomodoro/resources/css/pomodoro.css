@@ -3,7 +3,7 @@ body {
     border: 0;
     font-family: 'Roboto Mono', monospace;
     text-align: center;
-    background-color: rgb(185, 188, 188);
+    background-color: rgb(188, 188, 185);
 }
 .container {
     width: 100%;
@@ -17,7 +17,7 @@ body {
 .box {
     height: 90%;
     width: 100%;
-    color: white;
+    /* color: white; */
 }
 a:link, a:active, a:visited {
     color: white;
@@ -27,23 +27,39 @@ a:hover {
     color: grey;
     text-decoration: none;
 }
+.block {
+    border-radius: 20px;
+    float: left;
+    width: calc(33.33% - 80px);
+    margin: 40px;
+    background-color: rgba(216, 210, 183, 0.404);
+    backdrop-filter: blur(4px);
+    padding: 0px;
+}
+
 img {
-    width: 30%;
-    height: 30%;
+    overflow: hidden;
+    width:100%;
+    border-radius: 20px;
 }
-.pomodoroBox {
-    display: inline;
-    padding: 20px;
-}
-#timer {
-    position: absolute;
+
+.timer {
     font-size: 400px;
-    top: -300px;
-    right: 200px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0px;
 }
-#continue {
+.timer-box {
+    width: 1200px;
+    margin-left: calc(50% - 600px);
+    border-radius: 20px;
+    margin-bottom: 0px;
+    background-color: rgba(216, 210, 183, 0.404);
+}
+
+.continue {
     position: absolute;
-    font-size: xx-large;
-    top: 500px;
-    right: 720px;
+    font-size: 100px;
+    text-align: center;
+    width: 100%;
 }

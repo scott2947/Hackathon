@@ -19,13 +19,15 @@ countdown = async function(duration) {
         await delay(1000);
         duration--;
     }
+    var buttonContinue = document.getElementById('continue');
+    buttonContinue.innerHTML = "CONTINUE";
 }
 
 cleanup = function() {
     var boxes = document.getElementById('pomodoroBoxes');
     boxes.remove();
-    var buttonContinue = document.getElementById('continue');
-    buttonContinue.innerHTML = "CONTINUE";
+    // var buttonContinue = document.getElementById('continue');
+    // buttonContinue.innerHTML = "CONTINUE";
 }
 
 var breakWork = 0; // 0 = work, 1 = break
@@ -33,6 +35,8 @@ var cycle = 1;
 var type;
 
 continueButton = function() {
+    var buttonContinue = document.getElementById('continue');
+    buttonContinue.innerHTML = "";
     if (breakWork === 0) {
         countdown(10);
         breakWork = 1;

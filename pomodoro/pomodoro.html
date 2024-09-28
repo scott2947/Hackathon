@@ -27,33 +27,53 @@
             </nav>
         </header>
         <main>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+            <br><br><br><br>
             <div id="pomodoroBoxes">
-                <div class="pomodoroBox">
-                    <img src="resources/img/1hrTimer.png" alt="timer" onclick="oneHour()">
+                <div class="row">
+                    <div class="column">
+                        <button class="block" onclick="oneHour()">
+                            <img src="resources/img/cat-alarm.jpg">
+                            <h2>1 Hour</h2>
+                        </button>
+                    </div>
+                    <div class="column">
+                        <button class="block" onclick="twoHour()">
+                            <img src="resources/img/cat-alarm.jpg">
+                            <h2>2 Hours</h2>
+                        </button>
+                    </div>
+                    <div class="column">
+                        <button class="block" onclick="threeHour()">
+                            <img src="resources/img/cat-alarm.jpg">
+                            <h2>3 Hours</h2>
+                        </button>
+                    </div>
                 </div>
-                <div class="pomodoroBox">
-                    <img src="resources/img/2hrTimer.png" alt="timer" onclick="twoHour()">
-                </div>
-                <div class="pomodoroBox">
-                    <img src="resources/img/3hrTimer.png" alt="timer" onclick="threeHour()">
-                </div>
-                <div class="pomodoroBox">
-                    <img src="resources/img/4hrTimer.png" alt="timer" onclick="fourHour()">
-                </div>
-                <div class="pomodoroBox">
-                    <img src="resources/img/5hrTimer.png" alt="timer" onclick="fiveHour()">
-                </div>
-                <div class="pomodoroBox">
-                    <img src="resources/img/6hrTimer.png" alt="timer" onclick="sixHour()">
+                <div class="row">
+                    <div class="column">
+                        <button class="block" onclick="fourHour()">
+                            <img src="resources/img/cat-alarm.jpg">
+                            <h2>4 Hours</h2>
+                        </button>
+                    </div>
+                    <div class="column">
+                        <button class="block" onclick="fiveHour()">
+                            <img src="resources/img/cat-alarm.jpg">
+                            <h2>5 Hours</h2>
+                        </button>
+                    </div>
+                    <div class="column">
+                        <button class="block" onclick="sixHour()">
+                            <img src="resources/img/cat-alarm.jpg">
+                            <h2>6 Hours</h2>
+                        </div>
+                    </button>
                 </div>
             </div>
-            <p id="timer"></p>
-            <p id="continue" onclick="continueButton()"></p>
+
+            <div class="timer-box"><p class="timer" id="timer"></p></div>
+            <p class="continue" id="continue" onclick="continueButton()"></p>
+
         </main>
     </body>
 </html>
