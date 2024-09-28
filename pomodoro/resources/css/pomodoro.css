@@ -27,3 +27,23 @@ a:hover {
     color: grey;
     text-decoration: none;
 }
+img {
+    width: 30%;
+    height: 30%;
+}
+.pomodoroBox {
+    display: inline;
+    padding: 20px;
+}
+#timer {
+    position: absolute;
+    font-size: 400px;
+    top: -300px;
+    right: 200px;
+}
+#continue {
+    position: absolute;
+    font-size: xx-large;
+    top: 500px;
+    right: 720px;
+}
