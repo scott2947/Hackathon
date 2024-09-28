@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    border: 0;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    background-color: rgb(185, 188, 188);
+}
+.container {
+    width: 100%;
+    border: 1px solid grey;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+}
+.box {
+    height: 90%;
+    width: 100%;
+    color: white;
+}
+a:link, a:active, a:visited {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    color: grey;
+    text-decoration: none;
+}
