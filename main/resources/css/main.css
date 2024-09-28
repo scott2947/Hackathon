@@ -27,3 +27,12 @@ a:hover {
     color: grey;
     text-decoration: none;
 }
+#mquote {
+    color: cyan;
+    font-size: 14px;
+}
+p {
+    padding: 20px;
+    font-size: 1.3em;
+    text-align: left;
+}

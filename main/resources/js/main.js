@@ -1,5 +1,12 @@
 window.onload = function() {
-    let randNum = Math.floor(Math.random() * 11);
-    let quotes = ["Quote 1", "Quote 2", "Quote 3", "Quote 4", "Quote 5", "Quote 6", "Quote 7", "Quote 8", "Quote 9", "Quote 10"];
+    let randNum = Math.floor(Math.random() * 5);
+    console.log(randNum);
+    let quotes = [
+        "Champions keep playing until they get it right", 
+        "Give light and people will find the way", 
+        "Believe you can and you're halfway there", 
+        "Try to be a rainbow in someone's cloud", 
+        "It always seems impossible until it's done",
+    ];
     document.getElementById("mquote").innerHTML = quotes[randNum];
 }
