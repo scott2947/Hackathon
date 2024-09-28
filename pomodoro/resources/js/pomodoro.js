@@ -1,3 +1,5 @@
+var cat_video_present = true;
+
 converter = function(time) {
     var minutes = Math.floor(time / 60);
     if (minutes < 10) {
@@ -13,6 +15,14 @@ converter = function(time) {
 const delay = ms => new Promise(res => setTimeout(res, ms));
 
 countdown = async function(duration) {
+    if (cat_video_present == false) {
+        document.getElementById('video-for-cats').innerHTML = "<iframe class='video' frameBorder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen src='https://www.youtube.com/embed/Kr1XVY3dLUg?autoplay=1'></iframe>";
+        cat_video_present = true;
+    } else {
+        document.getElementById('video-for-cats').innerHTML = "";
+        cat_video_present = false;
+    }
+    
     timer = document.getElementById('timer');
     while (duration >= 0) {
         timer.innerHTML = converter(duration);
