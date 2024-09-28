@@ -7,8 +7,16 @@ body {
     border: 0;
     font-family: 'Roboto Mono', monospace;
     text-align: center;
-    background-image: url("../cat.jfif");  
+    background-image: url("../cat.jfif"); 
 }
+
+@media only screen and (min-width:2400px) {
+    body {
+        background-position: top;
+        background-size: cover;
+    }
+}
+
 .container {
     width: 100%;
     border: 1px solid grey;

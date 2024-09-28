@@ -3,8 +3,16 @@ body {
     border: 0;
     font-family: 'Roboto Mono', monospace;
     text-align: center;
-    background-color: rgb(185, 188, 188);
+    background-image: url("../img/cat.webp");
 }
+
+@media only screen and (min-width:1600px) {
+    body {
+        background-position: top;
+        background-size: cover;
+    }
+}
+
 .container {
     width: 100%;
     border: 1px solid grey;
@@ -35,4 +43,14 @@ p {
     padding: 20px;
     font-size: 1.3em;
     text-align: left;
+}
+
+.banner {
+    background-color: rgba(185, 143, 64, 0.404);
+    backdrop-filter: blur(8px);
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    height: calc(100% - 140px);
+    position: absolute;
 }
