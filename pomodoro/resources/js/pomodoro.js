@@ -30,7 +30,7 @@ cleanup = function() {
 
 var breakWork = 0; // 0 = work, 1 = break
 var cycle = 1;
-var type; // 3 for 3 hour, 2 for 2 hour, 1 for 1 hour
+var type;
 
 continueButton = function() {
     if (breakWork === 0) {
@@ -53,11 +53,45 @@ continueButton = function() {
     } else if (type === 3 && cycle === 12) {
         var buttonContinue = document.getElementById('continue');
         buttonContinue.remove();
+    } else if (type === 4 && cycle === 16) {
+        var buttonContinue = document.getElementById('continue');
+        buttonContinue.remove();
+    } else if (type === 5 && cycle === 20) {
+        var buttonContinue = document.getElementById('continue');
+        buttonContinue.remove();
+    } else if (type === 6 && cycle === 24) {
+        var buttonContinue = document.getElementById('continue');
+        buttonContinue.remove();
     }
 }
 
+sixHour = function() {
+    cleanup();
+    type = 6;
+    continueButton();
+}
+fiveHour = function() {
+    cleanup();
+    type = 5;
+    continueButton();
+}
+fourHour = function() {
+    cleanup();
+    type = 4;
+    continueButton();
+}
 threeHour = function() {
     cleanup();
     type = 3;
+    continueButton();
+}
+twoHour = function() {
+    cleanup();
+    type = 2;
+    continueButton();
+}
+oneHour = function() {
+    cleanup();
+    type = 1;
     continueButton();
 }
